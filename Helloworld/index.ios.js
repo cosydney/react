@@ -17,17 +17,6 @@ class AwesomeProject extends Component {
   }
 }
 
-class Bananas extends Component {
-  render(){
-    let pic = {
-      uri: "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjejq_YpubSAhXqhVQKHUNFDg4QjRwIBw&url=https%3A%2F%2Fforum.wordreference.com%2Fthreads%2Fa-bunch-of-bananas.3233625%2F&psig=AFQjCNFq2y99djdY5Rlm1ziwkrjILI_k_g&ust=1490141193327368"
-    };
-    return (
-      <Image source={pic} style={{width: 193, height: 110}}/>
-      );
-  }
-}
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
