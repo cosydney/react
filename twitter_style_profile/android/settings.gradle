@@ -1,0 +1,3 @@
+rootProject.name = 'twitter_style_profile'
+
+include ':app'
