@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>This</title>
+  </head>
+  <script>
+
+  var eleve = {
+    moyenne: function () {
+      var somme = 0
+      for(var i = 0; i < this.notes.length; i++){
+        somme += this.notes[i]
+      }
+      return somme / this.notes.length
+    },
+    present: function() {
+      console.log(this.nom + " Présent")
+    }
+  }
+
+  var jean = {
+    nom: 'Jean',
+    notes: [10, 20]
+  }
+
+  var marc = {
+    nom: 'Marc',
+    notes: [15, 20]
+  }
+
+  jean.__proto__ = eleve
+  marc.__proto__ = eleve
+
+
+  var marion = Object.create(eleve)
+  marion.notes = [15, 20]
+  marion.nom = 'Marion'
+
+  var Student = function (nom, notes) {
+    this.nom = nom
+    if (notes != undefined){
+      this.notes = notes
+    }
+
+  }
+
+  Student.prototype.moyenne = function () {
+    if (this.notes == undefined){
+      return NAN
+    }
+    var somme = 0
+    for(var i = 0; i < this.notes.length; i++){
+      somme += this.notes[i]
+    }
+    return somme / this.notes.length
+  }
+
+
+
+
+
+  </script>
+  <body>
+
+  </body>
+</html>
