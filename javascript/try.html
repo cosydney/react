@@ -1,0 +1,39 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<script>
+  var a = {}
+
+  try{
+  a.methoddeouf()
+  } catch (e) {
+    console.log("j'ai rencontre une erreur " + e)
+  }
+
+  var demo = function (nombre) {
+    if (nombre > 5) {
+      throw new Error('le nombre ne peut etre superieur a 5')
+    }
+    return nombre * 2
+  }
+
+  var double = function (nombre) {
+    var resultat = nombre * 2
+    if (Number.isNan(resultat)) {
+      throw new Error(' Le resultat nest pas un chiffre')
+    }
+    return resultat
+  }
+  console.log(double(9))
+  console.log('salut')
+  
+</script>
+<body>
+
+Coucou world
+</body>
+</html>
