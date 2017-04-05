@@ -1,0 +1,37 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .spoiler-content {
+    display: inline-block;;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.5s;
+  }
+  .spoiler-content.visible {
+    display: inline;
+    width: auto;
+    height: auto;
+    opacity: 1;
+  }
+  </style>
+</head>
+<body>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eaque alias maxime perferendis earum voluptas laboriosam tempore, laudantium quod repellendus illo nostrum fugit sit aliquid quibusdam suscipit quis odio distinctio!</p>
+
+  <p class="spoiler">
+    Monsieur X meurt a la fin
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, <span class="spoiler"> consectetur adipisicing elit. Rem nihil veniam natus corporis, architecto nulla, corrupti voluptate excepturi eum molestias laborum assumenda dignissimos suscipit qui facere sequi mollitia consequuntur optio. Reprehenderit est, fugiat beatae. Officiis nostrum tenetur, rerum quibusdam, alias soluta voluptatem amet veritatis minima sapiente laudantium reprehenderit excepturi, asperiores animi laboriosam inventore aspernatur delectus itaque voluptate quisquam, quos perspiciatis earum. Eum eos provident et iusto reprehenderit eius nostrum, ad, doloremque voluptas beatae, dolores ratione nihil totam. Suscipit porro, culpa, blanditiis, animi, illum odit eligendi non reprehenderit dolorem dolor maiores fuga. Tempora aliquid rerum impedit</span>, iure enim! Iusto, repudiandae, magnam!
+  </p>
+
+  <script src="app.js"></script>
+</body>
+</html>
