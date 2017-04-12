@@ -27,11 +27,11 @@ export default class MainPage extends Component {
   let tasks = this.state.tasks;
   tasks.splice(index, 1);
   this.setState({ tasks: tasks })
-}
+  }
 
-deleteAllTasks() {
+  deleteAllTasks() {
     this.setState({ tasks: [] })
-}
+  }
 
 
   render() {
