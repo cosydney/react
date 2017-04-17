@@ -1,0 +1,5 @@
+Imperative(How) vs Declarative(What)
+Unidirectional Data Flow =>
+
+Explicit Mutations with setState({})
+Just JS
